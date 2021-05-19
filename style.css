@@ -54,10 +54,17 @@
 
     /*-----------MAIN CONTENT-----------*/
     
+    .Main-content {
+        height: 100vh;
+        overflow-y: auto;
+    }
+
     .Main-content h1 {
         font-size: 1.8rem;
         font-weight: 300;
     }
+
+    /*-----------INTRODUCTION-----------*/
 
     .introduction {
         margin-top: 1.8em;
@@ -92,4 +99,55 @@
 
     .second-list {
         margin-top: 1em;
+    }
+
+    /*-----------What you should already know-----------*/
+
+    .WhatYouShouldAlreadyKnow {
+        margin-top: 1.8em;
+        margin-left: 2em;
+    }
+
+    .WhatYouShouldAlreadyKnow p {
+        margin-left: 1em;
+        margin-top: 1.5em;
+    }
+
+    .WhatYouShouldAlreadyKnow ul {
+        margin-left: 4.5em;
+    }
+
+    .WhatYouShouldAlreadyKnow ul li {
+        margin-top: 1em;
+        list-style: disc;
+        line-height: 1.5;
+        margin-right: 1.5em;
+    }
+
+    /*-----------Javascript and Java-----------*/
+    
+    .JavaScriptAndJava {
+        margin-top: 1.6em;
+        margin-left: 2em;
+    }
+
+    .paragraph1 {
+        margin-top: 1.2em;
+        margin-left: 1.2em;
+        line-height: 1.5;
+        margin-right: 1.5em;
+    }
+
+    .paragraph2 {
+        margin-top: 1.1em;
+        margin-left: 1.2em;
+        line-height: 1.4;
+        margin-right: 1em;
+    }
+
+    .paragraph3 {
+        margin-top: 1.2em;
+        margin-left: 1.2em;
+        line-height: 1.4;
+        margin-right: 1em;
     }
