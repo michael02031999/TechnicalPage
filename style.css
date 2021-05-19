@@ -15,37 +15,81 @@
     font-family: 'Open Sans', Arial, sans-serif;
   }
 
-  .sidebar {
-      position: fixed;
-      height: 100%;
-  }
-
-  .header {
-      background-color: #ffffff;
-      width: 300px;
-      height: 67px;
+  .wrapper {
       display: flex;
-      justify-content: center;
-      align-items: center;
-      font-size: 1.7rem;
-      font-weight: 100;
-      border-right: 1px gray solid;
-      border-bottom: 1px gray solid;
   }
 
-  .sidebar ul {
-      
-  }
+  .navbar {
+      height: 100vh;
+      background-color: white;
+    }
 
-  .sidebar li {
+  .navbar header {
+      font-size: 1.8rem;
+      padding-top: 0.5em;
+      padding-bottom: 0.7em;
+      border-bottom: 1px solid gray;
+      border-right: 4px solid gray;
       width: 300px;
-      padding-left: 30px;
-      padding-top: 8px;
-      padding-bottom: 7px;
-      line-height: 1.8;
-      border: 1px solid gray;
-      border-left: none;
-      
-  }
+      text-align: center;
+    }
 
+    .navbar ul {
+        height: 88%;
+        overflow-y: auto;
+        cursor: pointer;
+    }
 
+    .navbar li {
+        display: block;
+        width: 300px;
+        font-size: 1rem;
+        border: 0.01px solid gray;
+        border-width: thin;
+        border-right: 4px solid gray;
+        padding-left: 1.7em;
+        padding-top: 0.8em;
+        padding-bottom: 0.8em;
+    }
+
+    /*-----------MAIN CONTENT-----------*/
+    
+    .Main-content h1 {
+        font-size: 1.8rem;
+        font-weight: 300;
+    }
+
+    .introduction {
+        margin-top: 1.8em;
+        margin-left: 2em;
+    }
+
+    .subtitle-1 {
+        font-size: 0.97rem;
+        margin-left: 1.2em;
+        margin-right: 1.2em;
+        line-height: 1.4;
+        margin-top: 1em;
+    }
+    .subtitle-2 {
+        font-size: 0.97rem;
+        margin-left: 1.2em;
+        margin-right: 1.2em;
+        line-height: 1.4;
+        margin-top: 1em;
+    }
+
+    .small-list {
+        margin-top: 1.5em;
+        margin-left: 4em;
+        margin-right: 2em;
+        line-height: 1.4;
+    }
+
+    .small-list li{
+        list-style: disc;
+    }
+
+    .second-list {
+        margin-top: 1em;
+    }
