@@ -126,8 +126,45 @@
                     <div class="background4">
                         <p>// THIS WILL CAUSE AN ERROR function f() {}; const f = 5; // THIS WILL <br>
                         CAUSE AN ERROR ALSO function f() { const g = 5; var g; //statements <br>
-                        }</p>
+                        }
+                        </p>
                     </div>
+                    <p>However, object attributes are not protected, so the following statement is executed without problems.</p>
+                    <div class="background2">
+                        <p>const MY_OBJECT = {"key": "value"}; MY_OBJECT.key = "otherValue";</p>
+                    </div>
+                </div>
+                <div class="Datatypes">
+                    <h1>Data types</h1>
+                    <p>The latest ECMAScript standard defines seven data types:</p>
+                    <ul class="ul-1">
+                        <li class="disc">Six data types that are primitives:
+                            <ul class="ul-2">
+                                <li class="circle">Boolean. true and false.</li>
+                                <li class="circle">null. A special keyword denoting a null value. Because JavaScript is case-sensitive, null is not the same as Null, NULL, or any other variant.</li>
+                                <li class="circle">undefined. A top-level property whose value is undefined.</li>
+                                <li class="circle">Number. 42 or 3.14159.</li>
+                                <li class="circle">String. "Howdy"</li>
+                                <li class="circle">Symbol (new in ECMAScript 2015). A data type whose instances are unique and immutable.</li>
+                            </ul>
+                        </li>
+                        <li class="disc">and Object</li>
+                    </ul>
+                    <p>Although these data types are a relatively small amount, they enable you to perform useful functions with your applications. Objects and functions are the other fundamental elements in the language. You can think of objects as named containers for values, and functions as procedures that your application can perform.</p>
+                </div>
+                <div class="Ifelse">
+                    <h1>if...else statement</h1>
+                    <p>Use the if statement to execute a statement if a logical condition is true. Use the optional else clause to execute a statement if the condition is false. An if statement looks as follows:</p>
+                    <div class="background2">
+                        <p style="">if (condition) { statement_1; } else { statement_2; }</p>
+                    </div>
+                    <p>condition can be any expression that evaluates to true or false. See Boolean for an explanation of what evaluates to true and false. If condition evaluates to true, statement_1 is executed; otherwise, statement_2 is executed. statement_1 and statement_2 can be any statement, including further nested if statements.</p>
+                    <p>You may also compound the statements using else if to have multiple conditions tested in sequence, as follows:</p>
+                    <div class="background5">
+                        <p>if (condition_1) { statement_1; } else if (condition_2) { statement_2;<br>
+                        } else if (condition_n) { statement_n; } else { statement_last; }</p>
+                    </div>
+                    <p>In the case of multiple conditions only the first logical condition which evaluates to true will be executed. To execute multiple statements, group them within a block statement ({ ... }) . In general, it's good practice to always use block statements, especially when nesting if statements:</p>
                 </div>
             </div>
         </div>
